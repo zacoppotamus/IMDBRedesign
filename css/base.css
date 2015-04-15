@@ -1,0 +1,92 @@
+* {
+    color: #2B2321;
+}
+
+header {
+    width: 100%;
+    background-color: #AC1E34;
+}
+
+header > img {
+    padding: 20px;
+    min-height: 100px;
+    width: 200px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+@media (max-width: 600px) {
+    header > img {
+        padding: 10px;
+        max-width: 40%;
+    }
+}
+
+header > #ad {
+    padding: 0;
+    height: 140px;
+    width: 320px;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 600px) {
+    header > #ad {
+        height: 120px;
+        max-width: initial;
+        width: 190px;
+    }
+}
+
+header > nav {
+    max-height: 40px;
+    background-color: #2B2321;
+}
+
+header > nav > input {
+    margin: 10px 20px 10px 17px;
+    border-radius: 2px;
+    border-width: 0;
+    padding-left: 3px;
+    width: 200px;
+    height: 20px;
+}
+
+header > nav > .fa {
+      margin-left: -2.7em;
+      cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    header > nav > input {
+        margin: 10px 20px 10px 12px;
+        max-width: calc(40% - 3px);
+    }
+}
+
+header > nav > div {
+    position: absolute;
+    display: inline;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 17px;
+}
+
+header > nav > div > * {
+    color: #BF8C3D;
+}
+
+header > nav > div > .fa {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    header > nav > div {
+        margin-top: 12px;
+    }
+
+    header > nav > div > *, header > nav > div > .fa {
+        font-size: 0.8em;
+    }
+}
