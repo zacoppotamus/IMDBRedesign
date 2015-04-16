@@ -2,9 +2,30 @@
     color: #2B2321;
 }
 
+::-webkit-input-placeholder {
+   color: #BF8C3D;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #BF8C3D;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #BF8C3D;  
+}
+
+:-ms-input-placeholder {  
+   color: #BF8C3D;  
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
 header {
     width: 100%;
     background-color: #AC1E34;
+    box-shadow: 0 1px 5px black;
 }
 
 header > img {
@@ -44,17 +65,21 @@ header > nav {
 }
 
 header > nav > input {
-    margin: 10px 20px 10px 17px;
+    margin: 8px 20px 10px 17px;
     border-radius: 2px;
     border-width: 0;
     padding-left: 3px;
     width: 200px;
     height: 20px;
+    background-color: #2B2321;
+    color: #BF8C3D;
+    border-bottom: #BF8C3D 1px solid;
 }
 
 header > nav > .fa {
-      margin-left: -2.7em;
-      cursor: pointer;
+    margin-left: -2.7em;
+    cursor: pointer;
+    color: #BF8C3D;
 }
 
 @media (max-width: 600px) {
