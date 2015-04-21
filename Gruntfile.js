@@ -3,23 +3,6 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        sass: {
-            dist: {
-                options: {
-                    style: 'compressed',
-                    outputStyle: 'compressed'
-                },
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'sass/',
-                        src: ['sass/**/*.scss'],
-                        dest: 'css/',
-                        ext: '.css',
-                    },
-                ],
-            }
-        },
         compass : {
             dist: {
                 options: {
@@ -28,10 +11,20 @@ module.exports = function(grunt) {
                 }
             }
         },
+        sass : {
+          dist: {
+            options: {
+              style: 'compressed'
+            },
+            files: {
+              'css/base.css': 'sass/base.scss'
+            }
+          }
+        },
         watch: {
             css: {
                 files: ['sass/*.scss'],
-                tasks: ['compass'],
+                tasks: ['sass'],
                 options: {
                     spawn: false,
                     livereload: true
@@ -44,7 +37,7 @@ module.exports = function(grunt) {
                 }
             },
             js: {
-                files: ['js/izac.js'],
+                files: ['js/main.js'],
                 options: {
                     livereload: true
                 }
@@ -55,9 +48,9 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.registerTask('default', ['watch', 'connect']);
+    grunt.registerTask('default', ['watch', 'sass', 'connect']);
 };
