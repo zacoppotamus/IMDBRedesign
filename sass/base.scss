@@ -62,6 +62,7 @@ header > #ad {
 }
 
 header > nav {
+    position: relative;
     max-height: 40px;
     background-color: #2B2321;
 }
@@ -91,12 +92,58 @@ header > nav > .fa {
     }
 }
 
-header > nav > div {
+header > nav > ul {
     position: absolute;
+    margin: 0;
+    height: 100%;
     display: inline;
     right: 0;
-    margin-top: 10px;
-    margin-right: 17px;
+    top: 0;
+
+    li {
+        height: 100%;
+        float: left;
+        width: calc(50% - 2px);
+        text-align: center;
+        border-left: 1px solid $placeholder-color;
+        padding-left: 1px;
+        width: 9em;
+        cursor: pointer;
+
+        @media (max-width: 600px) {
+            width: 5.5em;
+        }
+
+        span {
+            color: $placeholder-color;
+            line-height: 40px;
+        }
+
+        .fa {
+            margin-left: 5px;
+            color: $placeholder-color;
+
+            @media (max-width: 900px) {
+                display: none;
+            }
+        }
+
+        i:nth-child(1) {
+            font-size: 0.8em;
+        }
+    }
+
+    li:hover {
+        background-color: $placeholder-color;
+
+        span {
+            color: white;
+        }
+
+        .fa {
+            color: white;
+        }
+    }
 }
 
 header > nav > div > * {
