@@ -133,7 +133,7 @@ header > nav > ul {
         }
     }
 
-    li:hover {
+    li:nth-child(1):hover, .hovered {
         background-color: $placeholder-color;
 
         span {
@@ -143,6 +143,18 @@ header > nav > ul {
         .fa {
             color: white;
         }
+    }
+
+    li:nth-last-child(1) {
+        float: none;
+        cursor: auto;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        width: 18em;
+        height: 200%;
+        background-color: $placeholder-color;
+        border-right: 2px solid $placeholder-color;
     }
 }
 
