@@ -1,5 +1,11 @@
 $(function(){
 
+    var $container = $('#container');
+    // initialize Masonry after all images have loaded  
+    $container.imagesLoaded( function() {
+        $container.masonry();
+    });
+
     var openToggle = function() {
         $( "header > nav > ul .mode-option" ).addClass("hovered");
         $( "header > nav > ul li:nth-last-child(1)" ).css("visibility","visible");

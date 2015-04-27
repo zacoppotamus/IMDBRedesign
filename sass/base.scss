@@ -26,6 +26,7 @@ textarea:focus, input:focus{
 
 header {
     width: 100%;
+    z-index: 2;
     background-color: #AC1E34;
     box-shadow: 0 1px 5px black;
 }
@@ -455,4 +456,30 @@ input[type=range].slider:focus::-ms-fill-upper {
 
 .display-none {
     display: none;
+}
+
+#container {
+    z-index: -1;
+
+    .item {
+            width: 25%;
+    }
+
+    .item.w1-2 {
+        width: 50%;
+    }
+
+    .item.w1-3 {
+        width: 33.33%;
+    }
+
+    .item.w2-3 {
+        width: 66.66%;
+    }
+
+    .play {
+        position: absolute;
+        left: 50%;
+        top: calc(50% - 0.5em);
+    }
 }
