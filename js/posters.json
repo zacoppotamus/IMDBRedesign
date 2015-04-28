@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "src": "../assets/photos/RoadTripPoster.jpeg",
+            "title": "Image 2"
+        },
+        {
+            "src": "../assets/photos/Ironmanposter.jpg",
+            "title": "Image 1"
+        },
+        {
+            "src": "../assets/photos/AnimalHousePoster.jpg",
+            "title": "Image 3"
+        },
+        {
+            "src": "../assets/photos/WaynesWorldPoster.jpg",
+            "title": "Image 4"
+        },
+        {
+            "src": "./assets/photos/MatrixPoster.jpeg",
+            "title": "Image 5"
+        },
+        {
+            "src": "./assets/photos/SpaceJamPoster.jpg",
+            "title": "Image 5"
+        },
+        {
+            "src": "./assets/photos/SpaceOdysseyPoster.jpg",
+            "title": "Image 5"
+        },
+        {
+            "src": "./assets/photos/BigLebowskiPoster.jpg",
+            "title": "Image 5"
+        },
+        {
+            "src": "./assets/photos/ManhattanPoster.jpg",
+            "title": "Image 5"
+        },
+        {
+            "src": "../assets/photos/BladeRunnerPoster.jpg",
+            "title": "Image 6"
+        }
+    ]
+}
