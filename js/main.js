@@ -64,6 +64,7 @@ $(function(){
     modeSwitch();
     $('#mode-slider').on('input', function(){
         modeSwitch();
+        $container.masonry();
     });
 })
 
