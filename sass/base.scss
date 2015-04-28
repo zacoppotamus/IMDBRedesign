@@ -64,13 +64,11 @@ header > #ad {
     width: 320px;
     position: absolute;
     right: 0;
-}
 
-@media (max-width: 600px) {
-    header > #ad {
-        height: 120px;
-        max-width: initial;
-        width: 190px;
+    @media (max-width: 600px) {
+            height: 120px;
+            max-width: 50%;
+            width: 190px;
     }
 }
 
@@ -101,7 +99,7 @@ header > nav > .fa {
 @media (max-width: 600px) {
     header > nav > input {
         margin: 10px 20px 10px 12px;
-        max-width: calc(40% - 3px);
+        max-width: calc(100% - 11em - 62px);
     }
 }
 
