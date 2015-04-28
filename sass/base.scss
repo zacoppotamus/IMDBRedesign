@@ -24,17 +24,22 @@ textarea:focus, input:focus{
     outline: 0;
 }
 
-h1 {
-	font-family: Helvetica, Arial, sans-serif;	
-}
-
 p {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
+
+h1, h2, h3 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
 header {
     width: 100%;
     z-index: 2;
-    background-color: #AC1E34;
+    background-color: $red;
     box-shadow: 0 1px 5px black;
 }
 
@@ -157,6 +162,7 @@ header > nav > ul {
         height: 170%;
         background-color: $placeholder-color;
         border-right: 2px solid $placeholder-color;
+        z-index: 1;
 
         i {
             position: absolute;
@@ -226,7 +232,7 @@ input[type=range].slider::-webkit-slider-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -12px;
@@ -249,7 +255,7 @@ input[type=range].slider::-moz-range-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
 }
 input[type=range].slider::-ms-track {
@@ -278,7 +284,7 @@ input[type=range].slider::-ms-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
   height: 1px;
 }
@@ -312,7 +318,7 @@ input[type=range].slider::-webkit-slider-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -12px;
@@ -335,7 +341,7 @@ input[type=range].slider::-moz-range-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
 }
 input[type=range].slider::-ms-track {
@@ -364,7 +370,7 @@ input[type=range].slider::-ms-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
   height: 1px;
 }
@@ -398,7 +404,7 @@ input[type=range].slider::-webkit-slider-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -11.5px;
@@ -421,7 +427,7 @@ input[type=range].slider::-moz-range-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
 }
 input[type=range].slider::-ms-track {
@@ -450,7 +456,7 @@ input[type=range].slider::-ms-thumb {
   height: 25px;
   width: 18px;
   border-radius: 10px;
-  background: #ac1e34;
+  background: $red;
   cursor: pointer;
   height: 2px;
 }
@@ -469,7 +475,30 @@ input[type=range].slider:focus::-ms-fill-upper {
     z-index: -1;
 
     .item {
-            width: 25%;
+        width: 25%;
+        min-width: 250px;
+
+        .outline {
+                padding: 0;
+                margin: 0.5em;
+                -webkit-box-shadow: 0px 0px 20px -7px black;
+                -moz-box-shadow: 0px 0px 20px -7px black;
+                box-shadow: 0px 0px 20px -7px black;
+
+                *:not(img) {
+                    padding: 0.5em;
+                }
+
+                h1 {
+                    padding: 0.25em 0.5em;
+                    background-color: $red;
+                    color: white;
+                }
+        }
+    }
+
+    .stamp1 {
+        left: 0;
     }
 
     .item.w1-2 {
@@ -486,7 +515,7 @@ input[type=range].slider:focus::-ms-fill-upper {
 
     .play {
         position: absolute;
-        left: 50%;
-        top: calc(50% - 0.5em);
+        left: calc(50% - 0.75em);
+        top: calc(50% - 1em);
     }
 }
