@@ -472,7 +472,6 @@ input[type=range].slider:focus::-ms-fill-upper {
 }
 
 #container {
-    z-index: -1;
 
     .item {
         width: 25%;
@@ -494,28 +493,36 @@ input[type=range].slider:focus::-ms-fill-upper {
                     background-color: $red;
                     color: white;
                 }
+
+                .primary {
+                    font-size: 3em;
+                    padding: 0.125em 0.25em;
+                }
+
+                .play {
+                    position: absolute;
+                    left: calc(50% - 0.75em);
+                    top: calc(50% - 1em);
+                    font-size: 4em;
+
+                    @media screen and (max-width: 999px) {
+                        font-size: 3em;
+                    }
+
+                    @media screen and (max-width: 520px) {
+                        font-size: 2em;
+                    }
+                }
         }
-    }
 
-    .stamp1 {
-        left: 0;
-    }
+        @media screen and (max-width: 999px) {
+            min-width: 0;
+            width: 33.33%
+        }
 
-    .item.w1-2 {
-        width: 50%;
-    }
-
-    .item.w1-3 {
-        width: 33.33%;
-    }
-
-    .item.w2-3 {
-        width: 66.66%;
-    }
-
-    .play {
-        position: absolute;
-        left: calc(50% - 0.75em);
-        top: calc(50% - 1em);
+        @media screen and (max-width: 520px) {
+            min-width: 0;
+            width: 50%
+        }
     }
 }
