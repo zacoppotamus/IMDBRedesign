@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                 }
             },
             js: {
-                files: ['js/main.js'],
+                files: ['js/main.js', 'js/carousel.js'],
                 options: {
                     livereload: true
                 }
