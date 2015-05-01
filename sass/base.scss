@@ -4,6 +4,10 @@
     color: $bg-color;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 ::-webkit-input-placeholder {
    color: $placeholder-color;
 }
@@ -657,14 +661,26 @@ input[type=range].slider:focus::-ms-fill-upper {
                 box-shadow: 0px 0px 20px -7px black;
                 background-color: white;
 
-                *:not(img) {
+                * {
                     padding: 0.5em;
+
+                    * {
+                        padding: 0;
+                    }
+                }
+
+                img {
+                    width: calc(100% - 1em);
                 }
 
                 h1 {
                     padding: 0.25em 0.5em;
                     background-color: $red;
                     color: white;
+                }
+
+                strong {
+                    font-weight: bold;
                 }
 
                 .primary {
@@ -696,6 +712,19 @@ input[type=range].slider:focus::-ms-fill-upper {
         @media screen and (max-width: 520px) {
             min-width: 0;
             width: 50%
+        }
+    }
+
+    .availability {
+
+        img {
+            max-height: 120px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        p {
+            text-align: right;
         }
     }
 }
