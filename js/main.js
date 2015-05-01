@@ -41,9 +41,9 @@ $(function(){
         switch ($('#mode-slider').val()) {
             case '1':
                 $('.mode-option:first > span').text("Casual User");
-                $('.casual').removeClass('display-none');
                 $('.junkie').addClass('display-none');
                 $('.pro').addClass('display-none');
+                $('.casual').removeClass('display-none');
                 break;
             case '2':
                 $('.mode-option:first > span').text("Movie Junkie");
@@ -64,6 +64,10 @@ $(function(){
     $('#mode-slider').on('input', function(){
         modeSwitch();
         $container.masonry();
+    });
+
+    $(window).resize(function(){
+        $container.masonry();  
     });
 })
 
