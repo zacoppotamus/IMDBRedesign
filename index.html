@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
@@ -34,13 +33,13 @@
             </nav>
         </header>
 
-        <div class="outer-wrapper">
+        <div class="outer-wrapper container">
             <div class="main-search row">
                 <i class="fa fa-search"></i>
                 <input type="text" placeholder="Search for movies, TV shows, actors, etc...">
             </div>
 
-            <div class="outer-carousel-wrapper row">
+            <div class="outer-carousel-wrapper">
                 <h1>Recommended based on history</h1>
                 <div class="movie-carousel-wrapper" id="recommended-carousel">
                     <div class="movie-carousel">
@@ -51,29 +50,26 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="lg-4 movie-carousel-wrapper release-carousel-wrapper" id="new-release-carousel">
-                    <h1>Theater Releases</h1>
+            <div class=" movie-carousel-wrapper release-carousel-wrapper" id="new-release-carousel">
+                <h1>Theater Releases</h1>
+                <div class="movie-carousel">
+                    <div class="loading">Loading carousel items...</div>
+                </div>
+                <a href="#" class="movie-carousel-control-prev">&lsaquo;</a>
+                                <a href="#" class="movie-carousel-control-next">&rsaquo;</a>
+            </div>
+
+            <div class=" theater-release-wrapper" >
+                <div class="movie-carousel-wrapper release-carousel-wrapper" id="theater-release-carousel">
+                    <h1>Home Releases</h1>
                     <div class="movie-carousel">
                         <div class="loading">Loading carousel items...</div>
                     </div>
                     <a href="#" class="movie-carousel-control-prev">&lsaquo;</a>
                                     <a href="#" class="movie-carousel-control-next">&rsaquo;</a>
                 </div>
-
-                <div class="lg-4 theater-release-wrapper" >
-                    <div class="movie-carousel-wrapper release-carousel-wrapper" id="theater-release-carousel">
-                        <h1>Home Releases</h1>
-                        <div class="movie-carousel">
-                            <div class="loading">Loading carousel items...</div>
-                        </div>
-                        <a href="#" class="movie-carousel-control-prev">&lsaquo;</a>
-                                        <a href="#" class="movie-carousel-control-next">&rsaquo;</a>
-                    </div>
-                </div>
-
-
             </div>
+
 
             <!-- <div class="outer-release-carousel-wrapper">
                 <h1>New Theater Releases</h1>
@@ -81,35 +77,35 @@
  -->
         </div>
 
-        <div class="row news junkie pro">
+        <div class="news junkie pro">
           <h1>News</h1>
           <!-- <h2>News</h2> -->
-          <div class="col-lg-4">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nulla?</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reprehenderit eveniet dicta esse voluptatum, alias ullam repellat, nihil tenetur ipsum error! Non recusandae molestias illo ducimus esse, nulla incidunt culpa.</p>
+          <div class="news-item">
+            <h2>Avengers: Age Of Ultron Opening Night Box Office Scores $27.6 Million</h2>
+            <p>The Avengers: Age of Ultron opening night box office was booming. Variety reports that the film raked in $27.6 million from opening night screenings. The Avengers pulled in $18.7 million from opening night screenings, although keep in mind that pre-midnight screenings became far more prevalent...</p>
           </div>
-          <div class="col-lg-4">
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, vero.</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reprehenderit eveniet dicta esse voluptatum, alias ullam repellat, nihil tenetur ipsum error! Non recusandae molestias illo ducimus esse, nulla incidunt culpa.</p>
+          <div class="news-item">
+            <h2>Cannes: ‘Buena Vista Social Club’ Sequel in the Works</h2>
+              <p>Broad Green Pictures has come on board “Buena Vista Social Club — Adios,” a sequel to Wim Wenders’ 2000 documentary about Cuban music.Board Green in a financing the project with Lucy Walker (“Waste Land”) directing and Christine Cowin and Zak Kilberg producing.</p>
             </div>
-            <div class="col-lg-4">
-              <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ducimus.</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reprehenderit eveniet dicta esse voluptatum, alias ullam repellat, nihil tenetur ipsum error! Non recusandae molestias illo ducimus esse, nulla incidunt culpa.</p>
+            <div class="news-item">
+              <h2>Ben E. King Dies -- 'Stand By Me' Singer Dead at 76</h2>
+              <p>Soul singer Ben E. King -- most famous for his classic, "Stand By Me" -- died on Thursday ... according to his publicist. King reportedly died at his home in New Jersey after suffering a heart ailment. He was 76 years old. King's mega hit song made it to Billboard's top five in 1961.</p>
             </div>
         </div>
 
-        <div class="row box-office pro">
+        <div class="box-office casual">
           <h1>Box Office</h1>
           <!-- <h2>News</h2> -->
-          <div class="col-lg-4">
+          <div class="box-office-item">
             <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, nulla?</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reprehenderit eveniet dicta esse voluptatum, alias ullam repellat, nihil tenetur ipsum error! Non recusandae molestias illo ducimus esse, nulla incidunt culpa.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="box-office-item">
             <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, vero.</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reprehenderit eveniet dicta esse voluptatum, alias ullam repellat, nihil tenetur ipsum error! Non recusandae molestias illo ducimus esse, nulla incidunt culpa.</p>
             </div>
-            <div class="col-lg-4">
+            <div class="box-office-item">
               <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, ducimus.</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla reprehenderit eveniet dicta esse voluptatum, alias ullam repellat, nihil tenetur ipsum error! Non recusandae molestias illo ducimus esse, nulla incidunt culpa.</p>
             </div>
