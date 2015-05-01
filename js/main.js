@@ -48,8 +48,8 @@ $(function(){
             case '2':
                 $('.mode-option:first > span').text("Movie Junkie");
                 $('.casual').addClass('display-none');
-                $('.junkie').removeClass('display-none');
                 $('.pro').addClass('display-none');
+                $('.junkie').removeClass('display-none');
                 break;
             case '3':
                 $('.mode-option:first > span').text("Film Pro");

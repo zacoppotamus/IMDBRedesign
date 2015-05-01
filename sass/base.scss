@@ -284,30 +284,63 @@ header > nav > div > .fa {
 }
 
  #theater-release-carousel {
-    margin-left: 12%;
-    width: 38%;
+    margin-left: 10%;
+    width: 40%;
     text-align: center;
     float: left;
 }
 
+@media (max-width: 700px) {
+  #new-release-carousel, #theater-release-carousel, #recommended-carousel {
+    margin-left: 6%;
+    width: 88%;
+    text-align: center;
+  }
+
+}
+
+.release-carousel-wrapper {
+    margin-bottom: 100px;
+}
 .movie-carousel-wrapper {
     margin-left: 40px;
     margin-top: 10px;
     position: relative;
-    border: 1px solid $brown-color;
+    // border: 1px solid $brown-color;
     width: 30%;
     height: 200px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;
+    // -webkit-border-radius: 2px;
+    // -moz-border-radius: 2px;
+    // border-radius: 2px;
+    // -webkit-box-shadow: 0 0 2px #999;
+    // -moz-box-shadow: 0 0 2px #999;
+    // box-shadow: 0 0 2px #999;
+}
+
+#recommended-carousel .movie-carousel-control-prev {
+  top: 0px;
+}
+
+#recommended-carousel .movie-carousel-control-next {
+  top: 0px;
 }
 
 .movie-carousel {
-    position: relative;
-    overflow: hidden;
+  border: 1px solid $brown-color;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 2px #999;
+}
+
+.movie-carousel-wrapper > h1 {
+  text-align: left;
+  margin-left: 0px;
 }
 
 .movie-carousel ul {
@@ -354,16 +387,33 @@ header > nav > div > .fa {
 
 .movie-carousel-control-prev {
     left: -50px;
-    top: -1px;
+    top: 100px;
     height: 202px;
     width: 50px
 }
 
 .movie-carousel-control-next {
     right: -50px;
-    top: -1px;
+    top: 100px;
     height: 202px;
     width: 50px
+}
+
+.movie-carousel-control-prev:hover,
+.movie-carousel-control-next:hover {
+  text-decoration: none;
+  color: $gold;
+}
+
+.movie-carousel-control-prev.active,
+.movie-carousel-control-next.active {
+  text-decoration: none;
+}
+
+a.movie-carousel-control-next,
+a.movie-carousel-control-prev {
+  text-decoration: none;
+  color: black;
 }
 
 .movie-carousel-control-prev:hover span,
@@ -378,7 +428,53 @@ header > nav > div > .fa {
     cursor: default;
 }
 
+// News
+.news {
+  margin-top: 30px;
+  margin-left: 5%;
+  text-align: justify;
+}
 
+.news h1 {
+  font-size: 1.7em;
+}
+
+.news p {
+  font-family: "Helvetica Neue";
+}
+
+.news .col-lg-4 {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+// Box-office
+.box-office {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 5%;
+  text-align: justify;
+}
+
+.box-office h1 {
+  font-size: 1.7em;
+}
+
+.box-office p {
+  font-family: "Helvetica Neue";
+}
+
+.box-office .col-lg-4 {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.row {
+  padding-right: 30px;
+  // padding-left: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 // Slider styling
 
 input[type=range].slider {
