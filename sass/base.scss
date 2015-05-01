@@ -293,16 +293,18 @@ header > nav > div > .fa {
 
 @media (max-width: 700px) {
   #new-release-carousel, #theater-release-carousel, #recommended-carousel {
-    margin-left: 6%;
-    width: 88%;
+    margin-left: 11%;
+    width: 78%;
     text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #recommended-carousel {
+    // margin-bottom: 30px;
   }
 
 }
 
-.release-carousel-wrapper {
-    margin-bottom: 100px;
-}
 .movie-carousel-wrapper {
     margin-left: 40px;
     margin-top: 10px;
