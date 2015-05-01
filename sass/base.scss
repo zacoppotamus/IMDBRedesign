@@ -432,8 +432,12 @@ a.movie-carousel-control-prev {
 }
 
 // News / Box office
+.news {
+  height: 180px;
+}
 .news, .box-office {
-  margin-top: 30px;
+  // margin-top: 30px;
+  margin-bottom: 50px;
   margin-left: 6%;
   text-align: justify;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
