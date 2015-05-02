@@ -683,6 +683,19 @@ input[type=range].slider:focus::-ms-fill-upper {
                     font-weight: bold;
                 }
 
+                ul {
+                    list-style: initial;
+                    margin-left: 1.5em;
+
+                    li {
+                        margin-top: 1em;
+                    }
+
+                    li:nth-child(1) {
+                        margin-top: 0;
+                    }
+                }
+
                 .primary {
                     font-size: 3em;
                     padding: 0.125em 0.25em;
@@ -739,9 +752,88 @@ input[type=range].slider:focus::-ms-fill-upper {
         p:first-of-type {
             margin-top: 6%;
         }
+    }
 
-        p:last-child {
+    .quotes .outline {
+        overflow: hidden;
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+
+            li {
+                margin-top: 2em;
+
+                span {
+                    float: right;
+                    margin-bottom: 0.5em;
+                }
+            }
+        }
+    }
+
+    .cast .outline {
+        overflow: hidden;
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+            margin-bottom: 1em;
+
+            li {
+                position: relative;
+                width: 50%;
+                display: inline;
+                float: left;
+                margin-top: 0;
+                height: 60px;
+
+                @media screen and (max-width: 999px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 520px) {
+                    height: 70px;
+                }
+
+                img {
+                    height: 44px;
+                    width: 32px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -22px;
+                }
+
+                span {
+                    margin-left: 40px;  /* = image width + 8 */
+                    margin-top: 18px;
+                    display: block;    
+                }
+            }
+        }
+    }
+
+    .awards, .trivia, .quotes {
+        .outline p:last-child {
             text-align: right;
+        }
+    }
+
+    .board, .reviews {
+        .outline {
+            div {
+                border-bottom: $bg-color 1px solid;
+                padding: 1em 0.5em;
+
+                img {
+                    max-width: 25%;
+                }
+            }
+
+            div:last-of-type {
+                border-bottom: none;
+            }
         }
     }
 }
