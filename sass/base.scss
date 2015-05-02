@@ -727,4 +727,21 @@ input[type=range].slider:focus::-ms-fill-upper {
             text-align: right;
         }
     }
+
+    .awards .outline {
+        overflow: hidden;
+
+        img {
+            width: 20%;
+            float: left;
+        }
+
+        p:first-of-type {
+            margin-top: 6%;
+        }
+
+        p:last-child {
+            text-align: right;
+        }
+    }
 }
