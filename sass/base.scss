@@ -355,37 +355,52 @@ header > nav > div > .fa {
 .movie-carousel-control-prev,
 .movie-carousel-control-next {
     position: absolute;
-    background: transparent;
-    color: $brown-color;
+    background: rgba(0,0,0,.7);
     text-decoration: none;
     font: 10em Helvetica, "Helvetica Neue";
 }
 
 #recommended-carousel .movie-carousel-control-prev,
 #recommended-carousel .movie-carousel-control-next {
-  top: 15px;
+  top: 35px;
 }
 
 #new-release-carousel .movie-carousel-control-prev,
 #new-release-carousel .movie-carousel-control-next,
 #theater-release-carousel .movie-carousel-control-prev,
 #theater-release-carousel .movie-carousel-control-next {
-  top: 40px;
+  top: 65px;
 }
 
 .movie-carousel-control-prev,
 .movie-carousel-control-next {
     height: 150px;
-    width: 50px;
+    width: 60px;
     color: white;
 }
 
 .movie-carousel-control-prev {
-    left: -5px;
+    left: 1px;
 }
 
 .movie-carousel-control-next {
-    right: -5px;
+    right: 1px;
+}
+
+.movie-carousel-control-next i {
+    color: white;
+    font-size: 120px;
+    position: absolute;
+    top: 15px;
+    right: 4px;
+}
+
+.movie-carousel-control-prev i {
+    color: white;
+    font-size: 120px;
+    position: absolute;
+    top: 15px;
+    left: 4px;
 }
 
 .movie-carousel-control-prev:hover,
