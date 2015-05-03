@@ -75,8 +75,8 @@ $(function(){
                 }, 500);
                 setTimeout(function() {
                     $('.news').animate({
-                        'position': 'absolute',
-                        'padding-top': '38px'
+                        // 'position': 'absolute',
+                        'padding-top': '25px'
                     }, 500);
                 }, 500);
                 break;
@@ -87,10 +87,10 @@ $(function(){
                 }, 500);
                 $('.news').animate({
                     'position': 'absolute',
-                    'padding-top': '38px'
+                    'padding-top': '25px'
                 }, 500);
                 $('.box-office').animate({
-                    'margin-top': '300px'
+                    'margin-top': '280px'
                 }, 500);
                 break;
         }
