@@ -357,16 +357,14 @@ header > nav > div > .fa {
 }
 
 #recommended-carousel .movie-carousel-control-prev,
-#recommended-carousel .movie-carousel-control-next {
-  top: 35px;
-}
-
+#recommended-carousel .movie-carousel-control-next,
 #new-release-carousel .movie-carousel-control-prev,
 #new-release-carousel .movie-carousel-control-next,
 #theater-release-carousel .movie-carousel-control-prev,
 #theater-release-carousel .movie-carousel-control-next {
-  top: 65px;
+  bottom: 1px;
 }
+
 
 .movie-carousel-control-prev,
 .movie-carousel-control-next {
@@ -1008,8 +1006,8 @@ input[type=range].slider:focus::-ms-fill-upper {
     }
 }
 
-#container.main {
-    color: white;
+#container.main-main {
+    // color: white;
     width: 100%;
     position: absolute;
     width: 100%;
@@ -1020,6 +1018,6 @@ input[type=range].slider:focus::-ms-fill-upper {
     background-position: center top;
 }
 
-#container.main h1,p,h2 {
-    color: white;
+#container.main-main h1,p,h2 {
+    // color: white;
 }
