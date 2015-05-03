@@ -3,8 +3,8 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="1.5 178.1 197 93.4" enable-background="new 1.5 178.1 197 93.4" xml:space="preserve">
 <circle fill="none" stroke="#2B2321" stroke-width="5" stroke-miterlimit="10" cx="48" cy="225" r="44"/>
-<circle fill="none" stroke="#2B2321" stroke-width="5" stroke-miterlimit="10" cx="152" cy="224.6" r="44"/>
+<circle fill="none" stroke="#2B2321" stroke-width="3" stroke-miterlimit="10" cx="152" cy="224.6" r="44.8"/>
 <polygon fill="none" stroke="#2B2321" stroke-width="5" stroke-miterlimit="10" points="30,195 82,225 30,255 "/>
 <circle fill="none" stroke="#2B2321" stroke-width="5" stroke-miterlimit="10" cx="152" cy="225" r="6"/>
-<circle fill="none" stroke="#2B2321" stroke-width="3" stroke-miterlimit="10" cx="152" cy="224.6" r="41"/>
+<circle fill="none" stroke="#2B2321" stroke-miterlimit="10" cx="152" cy="224.6" r="42"/>
 </svg>

@@ -774,6 +774,7 @@ input[type=range].slider:focus::-ms-fill-upper {
                     padding: 0.25em 0.5em;
                     background-color: $red;
                     color: white;
+                    cursor: pointer;
                 }
 
                 strong {
@@ -869,7 +870,7 @@ input[type=range].slider:focus::-ms-fill-upper {
         }
     }
 
-    .cast .outline {
+    .cast .outline, .crew .outline, .company .outline, .opening .outline {
         overflow: hidden;
 
         ul {
@@ -911,6 +912,22 @@ input[type=range].slider:focus::-ms-fill-upper {
         }
     }
 
+    .crew .outline, .company .outline, .opening .outline {
+        ul li {
+            height: initial;
+            margin-top: 0.5em;
+            width: 100%;
+        }
+
+        li:nth-child(1) {
+            margin-top: 0;
+        }
+
+        li:last-of-type {
+            margin-bottom: 0.5em;
+        }
+    }
+
     .awards, .trivia, .quotes {
         .outline p:last-child {
             text-align: right;
@@ -932,5 +949,18 @@ input[type=range].slider:focus::-ms-fill-upper {
                 border-bottom: none;
             }
         }
+    }
+
+    .sales .outline {
+        overflow: hidden;
+
+        span {
+            float: right;
+        }
+    }
+
+    .opening .outline li:nth-last-child(1) {
+        text-align: center;
+        font-style: italic;
     }
 }
