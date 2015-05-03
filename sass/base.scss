@@ -4,10 +4,6 @@
     color: $bg-color;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 ::-webkit-input-placeholder {
    color: $placeholder-color;
 }
@@ -161,7 +157,7 @@ header > nav > ul {
         visibility: hidden;
         position: absolute;
         top: 100%;
-        width: 100%;
+        width: calc( 100% - 4px);
         height: 170%;
         background-color: $placeholder-color;
         border-right: 2px solid $placeholder-color;
@@ -720,7 +716,7 @@ input[type=range].slider:focus::-ms-fill-upper {
 
         @media screen and (max-width: 999px) {
             min-width: 0;
-            width: 33.33%
+            width: calc( 33.33% - 6px )
         }
 
         @media screen and (max-width: 520px) {
