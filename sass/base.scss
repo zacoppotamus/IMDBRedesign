@@ -357,16 +357,14 @@ header > nav > div > .fa {
 }
 
 #recommended-carousel .movie-carousel-control-prev,
-#recommended-carousel .movie-carousel-control-next {
-  top: 35px;
-}
-
+#recommended-carousel .movie-carousel-control-next,
 #new-release-carousel .movie-carousel-control-prev,
 #new-release-carousel .movie-carousel-control-next,
 #theater-release-carousel .movie-carousel-control-prev,
 #theater-release-carousel .movie-carousel-control-next {
-  top: 65px;
+  bottom: 1px;
 }
+
 
 .movie-carousel-control-prev,
 .movie-carousel-control-next {
