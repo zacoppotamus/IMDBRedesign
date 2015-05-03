@@ -41,24 +41,24 @@ $(function(){
         switch ($('#mode-slider').val()) {
             case '1':
                 $('.mode-option:first > span').text("Casual User");
+                resizeCarousels(1);
                 $('.junkie').addClass('display-none');
                 $('.pro').addClass('display-none');
                 $('.casual').removeClass('display-none');
-                resizeCarousels(1);
                 break;
             case '2':
                 $('.mode-option:first > span').text("Movie Junkie");
+                resizeCarousels(2);
                 $('.casual').addClass('display-none');
                 $('.pro').addClass('display-none');
                 $('.junkie').removeClass('display-none');
-                resizeCarousels(2);
                 break;
             case '3':
                 $('.mode-option:first > span').text("Film Pro");
+                resizeCarousels(3);
                 $('.casual').addClass('display-none');
                 $('.junkie').addClass('display-none');
                 $('.pro').removeClass('display-none');
-                resizeCarousels(3);
                 break;
         }
     };
@@ -73,11 +73,12 @@ $(function(){
                     'width': '53%',
                     'margin-right': '3%'
                 }, 500);
-                $('.news').animate({
-                    'position': 'absolute',
-                    'padding-top': '38px'
+                setTimeout(function() {
+                    $('.news').animate({
+                        'position': 'absolute',
+                        'padding-top': '38px'
+                    }, 500);
                 }, 500);
-                // $container.masonry();
                 break;
             case '3':
                 $('.carousel-container').animate({
