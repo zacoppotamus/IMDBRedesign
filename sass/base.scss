@@ -1006,8 +1006,8 @@ input[type=range].slider:focus::-ms-fill-upper {
     }
 }
 
-#container.main {
-    color: white;
+#container.main-main {
+    // color: white;
     width: 100%;
     position: absolute;
     width: 100%;
@@ -1018,6 +1018,6 @@ input[type=range].slider:focus::-ms-fill-upper {
     background-position: center top;
 }
 
-#container.main h1,p,h2 {
-    color: white;
+#container.main-main h1,p,h2 {
+    // color: white;
 }
