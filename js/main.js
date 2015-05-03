@@ -89,7 +89,7 @@ $(function(){
                     'padding-top': '38px'
                 }, 500);
                 $('.box-office').animate({
-                    'margin-top': '240px'
+                    'margin-top': '300px'
                 }, 500);
                 break;
         }
