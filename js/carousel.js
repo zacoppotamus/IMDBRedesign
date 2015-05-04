@@ -10,7 +10,7 @@ $('.movie-carousel-control-prev')
         $(this).addClass('inactive');
     })
     .jcarouselControl({
-        target: '-=2'
+        target: '-=1'
     });
 
 $('.movie-carousel-control-next')
@@ -21,7 +21,7 @@ $('.movie-carousel-control-next')
         $(this).addClass('inactive');
     })
     .jcarouselControl({
-        target: '+=2'
+        target: '+=1'
     });
 
 var setup = function(data) {
