@@ -278,20 +278,6 @@ header > nav > div > .fa {
     float: left;
 }
 
-@media (max-width: 700px) {
-  #new-release-carousel, #theater-release-carousel, #recommended-carousel {
-    margin-left: 11%;
-    width: 78%;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  #recommended-carousel {
-    // margin-bottom: 30px;
-  }
-
-}
-
 .movie-carousel-wrapper {
     margin-left: 40px;
     position: relative;
@@ -424,7 +410,29 @@ header > nav > div > .fa {
     float: left;
 }
 
+@media(max-width: 630px) {
+    .carousel-container, .news-container, .box-office-container {
+        width: 89% !important;
+    }
+
+    #new-release-carousel, #theater-release-carousel, #recommended-carousel {
+      margin-left: 11%;
+      width: 78%;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+
+    .news-container, .box-office-container {
+        padding-left: 11%;
+        margin-bottom: 25px;
+    }
+}
+
 // News / Box office
+.news-container, .box-office-container {
+    display: table;
+}
 
 .news, .box-office {
   // margin-top: 30px;
@@ -476,9 +484,10 @@ header > nav > div > .fa {
 }
 
 .box-office .box-office-item {
-  width: 27%;
+  width: 100%;
   float: left;
   margin-right: 6%;
+  margin-bottom: 20px;
 }
 
 
@@ -1034,7 +1043,11 @@ input[type=range].slider:focus::-ms-fill-upper {
 }
 
 .zac-container {
-    h1,h2,p {
+    h1,h2,p, li {
       color: white;
+    }
+
+    li {
+        text-decoration: underline;
     }
 }

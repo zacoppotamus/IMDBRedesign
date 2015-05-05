@@ -59,6 +59,14 @@
         {
             "src": "../assets/photos/ulb.jpg",
             "title": "Image 6"
+        },
+        {
+            "src": "../assets/photos/spiderman.jpg",
+            "title": "Image 6"
+        },
+        {
+            "src": "../assets/photos/spiderman2.jpg",
+            "title": "Image 6"
         }
 
     ]
