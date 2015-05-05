@@ -756,11 +756,16 @@ input[type=range].slider:focus::-ms-fill-upper {
 }
 
 #container {
-    width: 100%;
+    padding-left: 0.5em;
+    width: calc(100% - 0.5em);
+
+    @media screen and (max-width: 999px) {
+        padding-left: 0;
+        width: 100%;
+    }
 
     .item {
-        width: 25%;
-        min-width: 250px;
+        width: calc( 25% - 0.5em );
 
         .outline {
                 padding: 0;
@@ -829,7 +834,7 @@ input[type=range].slider:focus::-ms-fill-upper {
 
         @media screen and (max-width: 999px) {
             min-width: 0;
-            width: calc( 33.33% - 6px )
+            width: calc( 33.33% - 0.5em )
         }
 
         @media screen and (max-width: 520px) {
@@ -976,42 +981,52 @@ input[type=range].slider:focus::-ms-fill-upper {
         font-style: italic;
     }
 
-    .other .outline {
-        background-color: $bg-color;
+    .other {
 
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        .background {
+            background-color: #2b2321;
+            position: absolute;
+            z-index: -1;
+            height: calc(100% - 0.5em);
+            width: calc(100% - 1em);
+            margin: 0.5em;
+        }
 
-            li {
-                font-family: Helvetica, Arial, sans-serif;
-                width: 33.33%;
-                height: 3em;
-                padding: 0;
-                float: left;
-                color: $placeholder-color;
-                background-color: $bg-color;
-                text-align: center;
+        .outline {
+            ul {
+                list-style: none;
                 margin: 0;
-                cursor: pointer;
-                padding-top: 1.5em;
-                margin-bottom: -1.5em;
+                padding: 0;
 
-                @media screen and (max-width: 999px) {
-                    width: 50%;
-                    height: 2em;
-                    padding-top: 1em;
-                    margin-bottom: -1em;
+                li {
+                    font-family: Helvetica, Arial, sans-serif;
+                    width: 33.33%;
+                    float: left;
+                    padding: 0.5em 0;
+                    color: $placeholder-color;
+                    background-color: $bg-color;
+                    text-align: center;
+                    margin: 0;
+                    cursor: pointer;
+
+                    @media screen and (max-width: 999px) {
+                        width: 50%;
+                    }
+
+                    @media screen and (max-width: 520px) {
+                        width: 100%;
+                    }
                 }
 
-                @media screen and (max-width: 520px) {
-                    width: 100%;
-                    height: 1em;
-                    padding-top: 1em;
-                    margin-bottom: 0;
+                li:hover {
+                    color: $bg-color;
+                    background-color: $placeholder-color;
                 }
             }
+        }
+
+        @media screen and (max-width: 520px) {
+            width: 100%;
         }
     }
 }
